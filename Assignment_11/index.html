@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Events</title>
+    <script src="app.js"></script>
+</head>
+
+<body>
+
+
+    <h3>1. Alert on Link Click</h3>
+    <a href="#" onclick="showAlert()">Click Me</a>
+
+    <hr>
+
+    <h3>2: Mobile Images</h3>
+
+
+
+    <div onmouseover="showImage(1)" onmouseout="hideImage(1)">
+        iPhone
+        <img id="img1" src="https://images.unsplash.com/photo-1592286927505-1def25115558?w=120&q=80" width="120"
+            style="display:none;" onclick="showMsg('iPhone pta prove')">
+    </div>
+
+
+    <div onmouseover="showImage(3)" onmouseout="hideImage(3)">
+        Vivo
+        <img id="img3" src="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=120&q=80" width="120"
+            style="display:none;" onclick="showMsg('iphon altra pro max')">
+    </div>
+
+    <h3>3: Student records</h3>
+
+    <table border="1">
+
+        <tr>
+    <hr>
+
+            <th>Name</th>
+            <th>Class</th>
+            <th>Action</th>
+        </tr>
+
+        <tr>
+            <td>Asad</td>
+            <td>10</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>Mark</td>
+            <td>10</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>Abdullah</td>
+            <td>10</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr> 
+    </table>
+
+    <hr>
+
+
+    <h3>4: Mouseover Image</h3>
+    <img src="img1.jpg" width="200" onmouseover="changeImage(this)" onmouseout="resetImage(this)">
+
+    <hr>
+
+
+    <h3>5: Counter</h3>
+    <h2>Counter: <span id="count">0</span></h2>
+    <button onclick="increase()">Increase</button>
+    <button onclick="decrease()">decrease</button>
+
+       
+
+</body>
+
+</html>
